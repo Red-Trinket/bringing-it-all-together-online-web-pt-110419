@@ -42,7 +42,7 @@ class Dog
       VALUES(?, ?)
     SQL
     
-    DB[:conn].execute(sql, self.name, self.breed).map each do |row|
+    DB[:conn].execute(sql, self.name, self.breed).map do |row|
       new_from_db(row)
     end.first
   end 
