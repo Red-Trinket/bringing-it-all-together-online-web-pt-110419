@@ -29,7 +29,7 @@ class Dog
   end 
   
   def new_from_db(row)
-    
+    new_song = 
   
   def save 
     sql = <<-SQL
